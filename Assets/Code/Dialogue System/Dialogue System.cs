@@ -52,13 +52,9 @@ public class DialogueSystem : MonoBehaviour
         {
             SkipTextDisplay();
         }
-        else if (currentDialogueSegmentIndex < currentDialogueSegment.dialoguePieces.Length)
-        {
-            ContinueDialogue();
-        }
         else
         {
-            CompleteDialogue();
+            ContinueDialogue();
         }
     }
 
@@ -67,16 +63,30 @@ public class DialogueSystem : MonoBehaviour
     {
         currentDialogueSegment = segment;
         currentDialogueSegmentIndex = 0;
+        DisplayDialoguePiece();
     }
 
     #region Internal Functions
 
+    private void DisplayDialoguePiece()
+    {
+        characterNameTextField.text = currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].characterName;
+        characterSpeechText.StartDisplayTextBySpeed(currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].text);
+        continueSkipButtonText.text = "Skip";
+    }
+
     private void ContinueDialogue()
     {
         currentDialogueSegmentIndex++;
-        characterSpeechText.StartDisplayTextBySpeed(currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].text);
 
-        continueSkipButtonText.text = "Skip";
+        if (currentDialogueSegmentIndex >= currentDialogueSegment.dialoguePieces.Length - 1)
+        {
+            CompleteDialogue();
+        }
+        else
+        {
+            DisplayDialoguePiece();
+        }
     }
 
     private void SkipTextDisplay()
