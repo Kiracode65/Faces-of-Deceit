@@ -720,6 +720,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1020754820776161218, guid: 068465cfe53258042a55ba13db1c5f9a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 387696338534287331}
+    - targetCorrespondingSourceObject: {fileID: 1020754820776161218, guid: 068465cfe53258042a55ba13db1c5f9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 387696338534287332}
   m_SourcePrefab: {fileID: 100100000, guid: 068465cfe53258042a55ba13db1c5f9a, type: 3}
 --- !u!224 &387696338534287329 stripped
 RectTransform:
@@ -744,6 +747,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DraggableWindow
   canvas: {fileID: 1727115292}
+--- !u!65 &387696338534287332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387696338534287330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
