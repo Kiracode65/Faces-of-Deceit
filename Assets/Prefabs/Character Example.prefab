@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5d8e70f3a5e1f498d55163d85ef292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
-  dialogueToInvoke: {fileID: 11400000, guid: c16c3ba43a7e63c4fa9a966d8b9f8dd5, type: 2}
+  dialogueToInvoke: {fileID: 11400000, guid: a039e5124a9971f4183224870cab2dd2, type: 2}
 --- !u!222 &9194105666050453305
 CanvasRenderer:
   m_ObjectHideFlags: 0
