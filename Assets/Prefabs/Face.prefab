@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6931482504934844476}
   - component: {fileID: 4942386893610142366}
   - component: {fileID: 5504526279233910980}
-  - component: {fileID: 1066179931483379941}
+  - component: {fileID: -3612543592205248477}
   m_Layer: 5
   m_Name: Face
   m_TagString: Face
@@ -76,8 +76,8 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!61 &1066179931483379941
-BoxCollider2D:
+--- !u!70 &-3612543592205248477
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111,14 +111,5 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
