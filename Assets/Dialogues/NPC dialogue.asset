@@ -29,5 +29,8 @@ MonoBehaviour:
     text: Would you have anything in stock?
     playerChoices: []
   - characterName: NPC
-    text: Oh and make it quick, I'm in a hurry!!
+    text: Oh and make it quick, I'm in a hurry!
+    playerChoices: []
+  - characterName: NPC
+    text: 
     playerChoices: []

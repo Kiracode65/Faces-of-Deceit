@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4808500633185937074}
   - component: {fileID: 9194105666050453305}
   - component: {fileID: 1673485951426716344}
-  - component: {fileID: 608523706375663878}
+  - component: {fileID: -4274811129178699735}
   m_Layer: 5
   m_Name: Character Example
   m_TagString: NPC
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50781244, y: 0.5}
   m_AnchorMax: {x: 0.50781244, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: 6}
-  m_SizeDelta: {x: 566.69, y: 593.64}
+  m_AnchoredPosition: {x: 39, y: 14}
+  m_SizeDelta: {x: 648.9461, y: 729.0091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4808500633185937074
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!61 &608523706375663878
+--- !u!61 &-4274811129178699735
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,10 +103,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
