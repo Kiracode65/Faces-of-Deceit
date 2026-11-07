@@ -299,7 +299,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 395465435296010129, guid: d521a0318b9278f4aa2ac5d7a1b6be1d, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8782969572539977972, guid: d521a0318b9278f4aa2ac5d7a1b6be1d, type: 3}
       propertyPath: m_LocalScale.x
@@ -360,9 +360,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8831234324445173908, guid: d521a0318b9278f4aa2ac5d7a1b6be1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1025091596}
-    - targetCorrespondingSourceObject: {fileID: 8831234324445173908, guid: d521a0318b9278f4aa2ac5d7a1b6be1d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1025091595}
   m_SourcePrefab: {fileID: 100100000, guid: d521a0318b9278f4aa2ac5d7a1b6be1d, type: 3}
 --- !u!1 &1025091593 stripped
@@ -382,18 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f22d0bd0593c64ba4b4221fb1ed312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drag
---- !u!114 &1025091596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025091593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06173f8cb7845f446918524d19f797fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PickUp
 --- !u!1 &1506311259
 GameObject:
   m_ObjectHideFlags: 0
