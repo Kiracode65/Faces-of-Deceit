@@ -7,10 +7,10 @@ public class PickUp : MonoBehaviour
     public static PickUp instance;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("FACE"))
+        if (other.gameObject.CompareTag("Face"))
         {
             ScoreManager.instance.ChangeScore(value);
-            Destroy(gameObject);
+            Destroy(other.gameObject);
             Debug.Log("Destroyed");
 
             
