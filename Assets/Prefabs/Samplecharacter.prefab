@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06173f8cb7845f446918524d19f797fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  value: 400
 --- !u!60 &6914110282225572409
 PolygonCollider2D:
   m_ObjectHideFlags: 0
