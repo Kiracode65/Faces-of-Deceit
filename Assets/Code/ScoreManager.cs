@@ -4,9 +4,14 @@ using UnityEditor.PackageManager;
 
 public class ScoreManager : MonoBehaviour
 
+
+
 {
     public TMP_Text scoreText;
     public static ScoreManager instance;
+    
+
+
 
     int score = 0;
 
@@ -21,10 +26,11 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Update is called once per frame
-  
-    public void AddPoint()
+
+
+    public void ChangeScore(int changeValue)
     {
-        score += 1;
-        scoreText.text = score.ToString() + "Total";
+        score += changeValue;
+        scoreText.text = score.ToString() + " Total";
     }
 }
