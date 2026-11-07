@@ -391,9 +391,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1025091593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 063787409698ffa4299d66443685a0af, type: 3}
+  m_Script: {fileID: 11500000, guid: 06173f8cb7845f446918524d19f797fe, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyStuff
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
 --- !u!1 &1506311259
 GameObject:
   m_ObjectHideFlags: 0
