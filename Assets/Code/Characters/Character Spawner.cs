@@ -3,13 +3,13 @@ using UnityEngine;
 public class CharacterSpawner : MonoBehaviour
 {
     [SerializeField] private Transform parentToSpawnCharacterInto;
-    [SerializeField] private Character sampleCharacter;
+    [SerializeField] private Character Samplecharacter;
 
     private Character currentChar;
 
     private void Start()
     {
-        SpawnCharacter(sampleCharacter);
+        SpawnCharacter(Samplecharacter);
     }
     public void SpawnCharacter(Character character)
     {
