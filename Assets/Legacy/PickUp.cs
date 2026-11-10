@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PickUp : MonoBehaviour
 {
+    
     [SerializeField] private int value = 1;
     
     public static PickUp instance;

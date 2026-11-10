@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7291041675626472661}
-  - component: {fileID: 3746672382297064948}
   - component: {fileID: -8587087496627196365}
+  - component: {fileID: 5568189007769610659}
+  - component: {fileID: 3746672382297064948}
   - component: {fileID: 2993014504306228701}
   - component: {fileID: 6914110282225572409}
-  - component: {fileID: 5568189007769610659}
   m_Layer: 0
   m_Name: Samplecharacter
   m_TagString: NPC
@@ -36,6 +36,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8587087496627196365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749209398622623152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5d8e70f3a5e1f498d55163d85ef292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character
+  dialogueToInvoke: {fileID: 11400000, guid: a039e5124a9971f4183224870cab2dd2, type: 2}
+--- !u!114 &5568189007769610659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749209398622623152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06173f8cb7845f446918524d19f797fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUp
+  value: 400
 --- !u!212 &3746672382297064948
 SpriteRenderer:
   serializedVersion: 2
@@ -95,19 +121,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &-8587087496627196365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6749209398622623152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5d8e70f3a5e1f498d55163d85ef292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  dialogueToInvoke: {fileID: 11400000, guid: a039e5124a9971f4183224870cab2dd2, type: 2}
 --- !u!50 &2993014504306228701
 Rigidbody2D:
   serializedVersion: 5
@@ -255,16 +268,3 @@ PolygonCollider2D:
       - {x: -0.265, y: -0.83}
       - {x: -0.255, y: -0.82}
   m_UseDelaunayMesh: 1
---- !u!114 &5568189007769610659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6749209398622623152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06173f8cb7845f446918524d19f797fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PickUp
-  value: 400
