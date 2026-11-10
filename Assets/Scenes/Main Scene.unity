@@ -2666,7 +2666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
   parentToSpawnCharacterInto: {fileID: 1630161735}
-  Samplecharacter: {fileID: -8587087496627196365, guid: 3b2193c53a3215c4fbc40ef8e8a05b42, type: 3}
+  Samplecharacter: {fileID: 3826200904515603283, guid: c4fd814394d52284d91e3d56fb6765c0, type: 3}
 --- !u!1 &1657546038
 GameObject:
   m_ObjectHideFlags: 0
