@@ -31,6 +31,7 @@ public class ShelfLayout : MonoBehaviour
             if (slots[i].childCount == 0) 
             {
                 face.transform.SetParent(slots[i]);
+                face.transform.localPosition = Vector3.zero;
                 break;
             }
         }

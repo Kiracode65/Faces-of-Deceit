@@ -24,12 +24,13 @@ public class InventoryManager : MonoBehaviour
 
     public void PickupFace(FaceObject face)
     {
-        storedFaces.Remove(face.FaceDetails);
-
         if (currentlyHeldFace != null)
         {
-            currentlyHeldFace.StoreFace();
-            //currentlyHeldFace.StoreFace();
+            if(currentlyHeldFace != face)
+            {
+                storedFaces.Remove(face.FaceDetails);
+                currentlyHeldFace.StoreFace();
+            }
         }
 
         currentlyHeldFace = face;

@@ -47,15 +47,17 @@ public class FaceObject : MonoBehaviour
     }
     public void StoreFace() // havent figured out how to do this yet, probably needs a shelf manager
     {
+        InventoryManager.Instance.StoreFace(this);
+
         ShelfLayout shelf = FindObjectOfType<ShelfLayout>();
 
-        if(shelf != null)
+        if (shelf != null)
         {
             shelf.RestoreFace(this);
         }
         else
         {
-            InventoryManager.Instance.StoreFace(this);
+            Destroy(gameObject);
         }
 
     }
