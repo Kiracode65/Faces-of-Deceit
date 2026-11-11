@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
         DialogueSystem.instance.onDialogueComplete.AddListener(DialogueCompleted);
     }
 
-    private void DialogueCompleted()
+    public virtual void DialogueCompleted()
     {
         Destroy(gameObject);
     }
