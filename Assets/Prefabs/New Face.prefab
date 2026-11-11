@@ -49,6 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FaceObject
   attributes: 000000000200000004000000
   Value: 400
+  storedFace:
+    faceScriptable: {fileID: 0}
+    assignedValue: 0
+  spriteRenderer: {fileID: 5227404631953721196}
 --- !u!212 &5227404631953721196
 SpriteRenderer:
   serializedVersion: 2

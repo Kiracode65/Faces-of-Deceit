@@ -9,8 +9,9 @@ public class FacePurchasingCharacter : Character
     [SerializeField] private DialogueSegmentScriptable successDialogue;
     [SerializeField] private DialogueSegmentScriptable failureDialogue;
 
-    private FaceObject receivedFace = null;
-    private bool satisfied = false;
+    [SerializeField] private FaceObject receivedFace = null;
+    [SerializeField] private bool satisfied = false;
+    [SerializeField] private bool hasFace = false;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Face") && other.TryGetComponent(out FaceObject face))
@@ -22,28 +23,31 @@ public class FacePurchasingCharacter : Character
     private void ReceiveFace(FaceObject face) // triggers when we get a face
     {
         receivedFace = face;
+        hasFace = true;
 
         if (HasCorrectFaceAttributes(face))
         {
+            satisfied = true;
             DialogueSystem.instance.StartDialogue(successDialogue);
             face.SellFace();
             Debug.Log("Satisfied Customer");
         }
         else
         {
+            satisfied = false;
             DialogueSystem.instance.StartDialogue(failureDialogue);
-            face.ReturnToShelf();
+            face.StoreFace();
             Debug.Log("Unhappy Customer");
         }
     }
 
     public override void DialogueCompleted()
     {
-        if(receivedFace == null) return;
+        if (!hasFace) return;
 
         if (satisfied)
         {
-            ScoreManager.instance.ChangeScore(receivedFace.Value);
+            ScoreManager.instance.ChangeScore(receivedFace.FaceDetails.assignedValue);
         }
         else
         {

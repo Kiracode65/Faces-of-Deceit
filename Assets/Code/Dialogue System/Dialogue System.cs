@@ -96,6 +96,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void CompleteDialogue()
     {
+        Debug.Log("Dialogue Complete");
         characterSpeechText.ClearText();
         onDialogueComplete?.Invoke();
     }
