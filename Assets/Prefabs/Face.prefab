@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 395465435296010129}
   - component: {fileID: -3428040662737971473}
   m_Layer: 0
-  m_Name: New Face
+  m_Name: Face
   m_TagString: Face
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
