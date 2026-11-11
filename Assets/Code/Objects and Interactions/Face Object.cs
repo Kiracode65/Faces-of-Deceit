@@ -13,7 +13,6 @@ public enum FaceAttribute
 }
 public class FaceObject : MonoBehaviour
 {
-    public List<FaceAttribute> attributes;
     public storedFace FaceDetails;
     [SerializeField] private SpriteRenderer spriteRenderer;
 

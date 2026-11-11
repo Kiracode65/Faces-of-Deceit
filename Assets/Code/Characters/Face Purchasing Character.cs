@@ -60,9 +60,9 @@ public class FacePurchasingCharacter : Character
     private bool HasCorrectFaceAttributes(FaceObject face)
     {
 
-        for (int i = 0; i < face.attributes.Count; i++) // if the face has any unwanted attributes
+        for (int i = 0; i < face.FaceDetails.faceScriptable.attributes.Count; i++) // if the face has any unwanted attributes
         {
-            if (unWantedAttributes.Contains(face.attributes[i]))
+            if (unWantedAttributes.Contains(face.FaceDetails.faceScriptable.attributes[i]))
             {
                 Debug.Log("Face contained unwanted attributes");
                 return false;
@@ -72,7 +72,7 @@ public class FacePurchasingCharacter : Character
 
         for (int i = 0; i < desiredAttributes.Count; i++)// if the face does not contain any desired attributes
         {
-            if (!face.attributes.Contains(desiredAttributes[i]))
+            if (!face.FaceDetails.faceScriptable.attributes.Contains(desiredAttributes[i]))
             {
                 Debug.Log("Face Did not have all required attributes");
                 return false;
