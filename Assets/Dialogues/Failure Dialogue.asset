@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
   - characterName: NPC
-    text: Oh, that's not what I was looking for, perhaps I'll try somewhere else
+    text: This was NOT what I was looking for!
+    playerChoices: []
+  - characterName: NPC
+    text: "I refuse to pay you! I shall not be coming back! \n"
+    playerChoices: []
+  - characterName: NPC
+    text: 
     playerChoices: []

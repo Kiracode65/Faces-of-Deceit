@@ -1462,10 +1462,12 @@ MonoBehaviour:
   storedFaces:
   - faceScriptable: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
     assignedValue: 400
-  - faceScriptable: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
+  - faceScriptable: {fileID: 11400000, guid: 75fa108022634be4c988496de839487a, type: 2}
     assignedValue: 700
-  - faceScriptable: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
-    assignedValue: 300
+  - faceScriptable: {fileID: 11400000, guid: 0b504f7b5497de84f90645329bec8c79, type: 2}
+    assignedValue: 250
+  - faceScriptable: {fileID: 11400000, guid: 9f01a2c9417fbba4a957d7c2b311ccfe, type: 2}
+    assignedValue: 100
 --- !u!1 &899304337
 GameObject:
   m_ObjectHideFlags: 0
