@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b34b7099d8c15b4aa532f7f1156c750, type: 3}
   m_Name: Poor person dialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
-  dialoguePieces: []
+  dialoguePieces:
+  - characterName: Poor Person
+    text: Hey, um, I really need the money. . .
+    playerChoices: []
+  - characterName: Poor Person
+    text: What can I get for this. . .
+    playerChoices: []

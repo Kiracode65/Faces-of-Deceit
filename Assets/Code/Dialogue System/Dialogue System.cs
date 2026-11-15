@@ -70,6 +70,12 @@ public class DialogueSystem : MonoBehaviour
 
     private void DisplayDialoguePiece()
     {
+        if(currentDialogueSegment.dialoguePieces == null || currentDialogueSegment.dialoguePieces.Length == 0)
+        {
+            Debug.LogError("No dialogue pieces inside scriptable");
+            return;
+        }
+
         characterNameTextField.text = currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].characterName;
         characterSpeechText.StartDisplayTextBySpeed(currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].text);
         continueSkipButtonText.text = "Skip";
@@ -79,7 +85,7 @@ public class DialogueSystem : MonoBehaviour
     {
         currentDialogueSegmentIndex++;
 
-        if (currentDialogueSegmentIndex >= currentDialogueSegment.dialoguePieces.Length - 1)
+        if (currentDialogueSegmentIndex >= currentDialogueSegment.dialoguePieces.Length)
         {
             CompleteDialogue();
         }

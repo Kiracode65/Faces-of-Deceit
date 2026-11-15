@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37014ef326b617e44b1ac930b2fa2fb7, type: 3}
-  m_Name: Face Scriptable Example
+  m_Name: Young Face
   m_EditorClassIdentifier: Assembly-CSharp::FaceScriptable
   sprite: {fileID: 8133885611052166515, guid: ec507960db6cc5246b9be33897d2e834, type: 3}
+  description: A face lifted from a young woman
   attributes: 0200000004000000
