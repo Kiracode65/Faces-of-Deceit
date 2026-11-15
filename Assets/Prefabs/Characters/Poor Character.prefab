@@ -48,6 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FaceSellingCharacter
   entryDialogue: {fileID: 11400000, guid: c16c3ba43a7e63c4fa9a966d8b9f8dd5, type: 2}
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls: []
   faceToSell: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
   highPriceReaction: {fileID: 11400000, guid: 731399bafbb11e048a8623ba0d7a164f, type: 2}
   lowPriceReaction: {fileID: 11400000, guid: 731399bafbb11e048a8623ba0d7a164f, type: 2}
@@ -171,7 +174,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

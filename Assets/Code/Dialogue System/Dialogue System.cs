@@ -17,7 +17,7 @@ public class DialogueSystem : MonoBehaviour
     public UnityEvent onDialogueComplete;
 
     public static DialogueSystem instance;
-    //
+  
 
     #region UnityMessages
     private void Awake()
@@ -78,6 +78,7 @@ public class DialogueSystem : MonoBehaviour
 
         characterNameTextField.text = currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].characterName;
         characterSpeechText.StartDisplayTextBySpeed(currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].text);
+        continueSkipButton.gameObject.SetActive(true);
         continueSkipButtonText.text = "Skip";
     }
 
@@ -105,6 +106,7 @@ public class DialogueSystem : MonoBehaviour
         Debug.Log("Dialogue Complete");
         characterSpeechText.ClearText();
         onDialogueComplete?.Invoke();
+        continueSkipButton.gameObject.SetActive(false);
     }
 
     private void CharacterTextCompleted()

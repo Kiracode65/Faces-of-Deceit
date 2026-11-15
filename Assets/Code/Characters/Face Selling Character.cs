@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FaceSellingCharacter : Character
 {
@@ -7,6 +8,10 @@ public class FaceSellingCharacter : Character
     [SerializeField] private DialogueSegmentScriptable highPriceReaction;
     [SerializeField] private DialogueSegmentScriptable lowPriceReaction;
     [SerializeField] private DialogueSegmentScriptable expectedPriceReaction;
+
+    public UnityEvent onLowPrice;
+    public UnityEvent onHighPrice;
+    public UnityEvent onExpectedPrice;
 
     [Min(0)]
     [SerializeField] private int minExpectedPrice = 0;
@@ -35,14 +40,17 @@ public class FaceSellingCharacter : Character
         if(price < minExpectedPrice)
         {
             DialogueSystem.instance.StartDialogue(lowPriceReaction);
+            onLowPrice?.Invoke();
         }
         else if (price > maxExpectedPrice)
         {
             DialogueSystem.instance.StartDialogue(highPriceReaction);
+            onHighPrice?.Invoke();
         }
         else
         {
             DialogueSystem.instance.StartDialogue(expectedPriceReaction);
+            onExpectedPrice?.Invoke();
         }
 
         storedFace faceDetails = new storedFace();
@@ -51,8 +59,9 @@ public class FaceSellingCharacter : Character
         InventoryManager.Instance.StoreFace(faceDetails);
     }
 
-    private void OnDestroy()
+    public override void OnDestroy()
     {
+        base.OnDestroy();
         FacePriceSetter.Instance.onPriceSet.RemoveListener(PriceSet);
     }
 }

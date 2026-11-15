@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FacePurchasingCharacter : Character
 {
@@ -8,6 +9,9 @@ public class FacePurchasingCharacter : Character
 
     [SerializeField] private DialogueSegmentScriptable successDialogue;
     [SerializeField] private DialogueSegmentScriptable failureDialogue;
+
+    public UnityEvent onSuccess;
+    public UnityEvent onFailure;
 
     [SerializeField] private FaceObject receivedFace = null;
     [SerializeField] private bool satisfied = false;
@@ -29,6 +33,7 @@ public class FacePurchasingCharacter : Character
         {
             satisfied = true;
             DialogueSystem.instance.StartDialogue(successDialogue);
+            onSuccess?.Invoke();
             face.SellFace();
             Debug.Log("Satisfied Customer");
         }
@@ -36,6 +41,7 @@ public class FacePurchasingCharacter : Character
         {
             satisfied = false;
             DialogueSystem.instance.StartDialogue(failureDialogue);
+            onFailure?.Invoke();
             face.StoreFace();
             Debug.Log("Unhappy Customer");
         }
