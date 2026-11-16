@@ -55,6 +55,15 @@ MonoBehaviour:
   highPriceReaction: {fileID: 11400000, guid: 731399bafbb11e048a8623ba0d7a164f, type: 2}
   lowPriceReaction: {fileID: 11400000, guid: 731399bafbb11e048a8623ba0d7a164f, type: 2}
   expectedPriceReaction: {fileID: 11400000, guid: 15cf2d73d9e38524095e80ac2b97b2bb, type: 2}
+  onLowPrice:
+    m_PersistentCalls:
+      m_Calls: []
+  onHighPrice:
+    m_PersistentCalls:
+      m_Calls: []
+  onExpectedPrice:
+    m_PersistentCalls:
+      m_Calls: []
   minExpectedPrice: 0
   maxExpectedPrice: 400
   hasPricedFace: 0
