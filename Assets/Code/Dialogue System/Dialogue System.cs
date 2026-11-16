@@ -13,7 +13,7 @@ public class DialogueSystem : MonoBehaviour
 
     [SerializeField] private DialogueSegmentScriptable currentDialogueSegment;
     [SerializeField] private int currentDialogueSegmentIndex;
-
+    [SerializeField] private GameObject dialogueBox;
     public UnityEvent onDialogueComplete;
 
     public static DialogueSystem instance;
@@ -58,12 +58,20 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
+    private void ToggleDialogueBox(bool toggle)
+    {
+        dialogueBox.SetActive  (toggle);
+    }
+
+
 
     public void StartDialogue(DialogueSegmentScriptable segment)
     {
+        ToggleDialogueBox (true);
         currentDialogueSegment = segment;
         currentDialogueSegmentIndex = 0;
         DisplayDialoguePiece();
+
     }
 
     #region Internal Functions
@@ -88,7 +96,9 @@ public class DialogueSystem : MonoBehaviour
 
         if (currentDialogueSegmentIndex >= currentDialogueSegment.dialoguePieces.Length)
         {
+            ToggleDialogueBox(false);
             CompleteDialogue();
+            
         }
         else
         {
