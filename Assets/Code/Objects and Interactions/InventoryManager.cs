@@ -37,17 +37,8 @@ public class InventoryManager : MonoBehaviour
         face.transform.SetParent(transform);
     }
 
-    public void StoreFace(FaceObject face)
+    public void StoreFace(storedFace face)
     {
-        storedFaces.Add(face.FaceDetails);
-    }
-
-  
-}
-
-[Serializable]
-public struct storedFace
-{
-    public FaceScriptable faceScriptable;
-    public int assignedValue;
+        storedFaces.Add(face);
+    } 
 }

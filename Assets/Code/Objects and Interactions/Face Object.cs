@@ -47,7 +47,7 @@ public class FaceObject : MonoBehaviour
     }
     public void StoreFace() // havent figured out how to do this yet, probably needs a shelf manager
     {
-        InventoryManager.Instance.StoreFace(this);
+        InventoryManager.Instance.StoreFace(FaceDetails);
 
         ShelfLayout shelf = FindObjectOfType<ShelfLayout>();
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,5 +6,13 @@ using UnityEngine;
 public class FaceScriptable : ScriptableObject
 {
     public Sprite sprite;
+    public string description;
     public List<FaceAttribute> attributes;
+}
+
+[Serializable]
+public struct storedFace
+{
+    public FaceScriptable faceScriptable;
+    public int assignedValue;
 }
