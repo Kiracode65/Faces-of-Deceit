@@ -23,5 +23,5 @@ MonoBehaviour:
     text: When can we start?
     playerChoices: []
   - characterName: NPC
-    text: When can we start?
+    text: 
     playerChoices: []
