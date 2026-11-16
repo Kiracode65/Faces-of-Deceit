@@ -19,10 +19,7 @@ public class ScoreManager : MonoBehaviour
     {
         instance = this;
     }
-    
-    
 
-   
     void Start()
     {
         scoreText.text = score.ToString() + "Total";
