@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b34b7099d8c15b4aa532f7f1156c750, type: 3}
-  m_Name: Failure Dialogue
+  m_Name: poor person refusal
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
   - characterName: NPC
-    text: This was NOT what I was looking for!
+    text: Oh that is way too low, i'm sorry I can't agree to that
     playerChoices: []
   - characterName: NPC
-    text: "I refuse to pay you! I shall not be coming back! \n"
-    playerChoices: []
-  - characterName: NPC
-    text: 
+    text: I'll try somewhere else, goodbye
     playerChoices: []

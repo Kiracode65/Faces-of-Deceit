@@ -53,7 +53,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   faceToSell: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
-  priceRefusalReaction: {fileID: 11400000, guid: 15cf2d73d9e38524095e80ac2b97b2bb, type: 2}
+  priceRefusalReaction: {fileID: 11400000, guid: 105185192ea99c94ca63eeaeb6d60a74, type: 2}
   lowPriceReaction: {fileID: 11400000, guid: e48d34420982733429a271b012027caf, type: 2}
   expectedPriceReaction: {fileID: 11400000, guid: 14614513eb610b44fb34e6d885d7fe7d, type: 2}
   highPriceReaction: {fileID: 11400000, guid: a31a898ad678b2c4b8b148c7e907ba78, type: 2}
@@ -63,36 +63,15 @@ MonoBehaviour:
       m_Calls: []
   onLowPrice:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3746672382297064948}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onExpectedPrice:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3746672382297064948}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHighPrice:
     m_PersistentCalls:
+      m_Calls: []
+  onCompletedProceedureLowPrice:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3746672382297064948}
         m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
@@ -106,15 +85,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onCompletedProceedureLowPrice:
-    m_PersistentCalls:
-      m_Calls: []
   onCompletedProceedureExpectedPrice:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3746672382297064948}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onCompletedProceedureHighPrice:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3746672382297064948}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   absoluteMinPrice: 100
   minExpectedPrice: 0
   maxExpectedPrice: 400
