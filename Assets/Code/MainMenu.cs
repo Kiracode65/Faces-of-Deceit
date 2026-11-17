@@ -8,6 +8,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string mainSceneName;
     [SerializeField] private string cutSceneName;
 
+    private void Awake()
+    {
+        if(InventoryManager.Instance != null) Destroy(InventoryManager.Instance.gameObject);
+        if(SaveData.instance != null) Destroy(SaveData.instance.gameObject);
+    }
+
     public void PlayGame()
     {
         SaveData.instance.CreateSaveFile();

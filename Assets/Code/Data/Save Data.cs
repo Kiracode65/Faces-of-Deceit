@@ -24,7 +24,7 @@ public class SaveData : MonoBehaviour
 
     public static SaveData instance;
 
-    private void Awake()
+    private void Start()
     {
         if(instance != null && instance != this)
         {
