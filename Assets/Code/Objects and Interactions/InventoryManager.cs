@@ -29,6 +29,7 @@ public class InventoryManager : MonoBehaviour
             if(currentlyHeldFace != face)
             {
                 storedFaces.Remove(face.FaceDetails);
+
                 currentlyHeldFace.StoreFace();
             }
         }
@@ -40,5 +41,6 @@ public class InventoryManager : MonoBehaviour
     public void StoreFace(storedFace face)
     {
         storedFaces.Add(face);
+        if (SaveData.instance != null && SaveData.instance.hasLoadedData) SaveData.instance.currentData.storedFaces = storedFaces.ToArray();
     } 
 }

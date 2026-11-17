@@ -4,9 +4,13 @@ using UnityEngine.UI;
 
 public class FacePriceSetter : MonoBehaviour
 {
+    [SerializeField] private int minPrice = 50;
+    [SerializeField] private int maxPrice = 100000;
+
     [SerializeField] private FaceDetailsDisplay detailsDisplay;
     [SerializeField] private GameObject popup;
 
+    public UnityEvent onInvalidPrice;
     public UnityEvent<int> onPriceSet;
 
     public static FacePriceSetter Instance;
@@ -33,6 +37,12 @@ public class FacePriceSetter : MonoBehaviour
 
     public void SetPrice(int price)
     {
+        if (price < minPrice || price > maxPrice)
+        {
+            onInvalidPrice.Invoke();
+            return;
+        }
+
         onPriceSet.Invoke(price);
         popup.SetActive(false);
     }

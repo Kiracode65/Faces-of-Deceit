@@ -6,14 +6,15 @@ using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
+    [SerializeField] private DialogueSegmentScriptable currentDialogueSegment;
+    [SerializeField] private int currentDialogueSegmentIndex;
+    [Space]
     [SerializeField] private TMP_Text characterNameTextField;
     [SerializeField] private SlowTextDisplay characterSpeechText;
     [SerializeField] private Button continueSkipButton;
     [SerializeField] private TMP_Text continueSkipButtonText;
-
-    [SerializeField] private DialogueSegmentScriptable currentDialogueSegment;
-    [SerializeField] private int currentDialogueSegmentIndex;
     [SerializeField] private GameObject dialogueBox;
+
     public UnityEvent onDialogueComplete;
 
     public static DialogueSystem instance;
@@ -40,6 +41,9 @@ public class DialogueSystem : MonoBehaviour
 
     private void OnDestroy()
     {
+        //SaveData.instance.currentData.currentDialogueSegment = currentDialogueSegment;
+        //SaveData.instance.currentData.currentDialogueIndex = currentDialogueSegmentIndex;
+
         characterSpeechText.onComplete.RemoveListener(CharacterTextCompleted);
         continueSkipButton.onClick.RemoveListener(ContinueButtonClicked);
     }
@@ -67,9 +71,20 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(DialogueSegmentScriptable segment)
     {
-        ToggleDialogueBox (true);
         currentDialogueSegment = segment;
         currentDialogueSegmentIndex = 0;
+
+        if (SaveData.instance != null && SaveData.instance.hasLoadedData)
+        {
+            if (SaveData.instance.currentData.currentDialogue != null && segment == SaveData.instance.currentData.currentDialogue) // loading the index if possible
+            {
+                currentDialogueSegmentIndex = SaveData.instance.currentData.currentDialogueIndex;
+            }
+
+            SaveData.instance.currentData.currentDialogue = currentDialogueSegment; // setting the segment
+        }
+
+        ToggleDialogueBox (true);
         DisplayDialoguePiece();
 
     }
@@ -82,6 +97,12 @@ public class DialogueSystem : MonoBehaviour
         {
             Debug.LogError("No dialogue pieces inside scriptable");
             return;
+        }
+
+        if (SaveData.instance != null && SaveData.instance.hasLoadedData)
+        {
+
+            SaveData.instance.currentData.currentDialogueIndex = currentDialogueSegmentIndex;
         }
 
         characterNameTextField.text = currentDialogueSegment.dialoguePieces[currentDialogueSegmentIndex].characterName;

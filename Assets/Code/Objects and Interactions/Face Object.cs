@@ -17,16 +17,16 @@ public class FaceObject : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     private bool dragging = false;
-    private Vector3 offset;
-    private Vector3 baseOffset = new Vector3(0, 0, 11);
+    private Vector2 offset;
+    private float baseZOffset = -5f;
 
     void Update()
     {
         if (dragging)
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector3(transform.position.x, transform.position.y, baseOffset.z);
-            transform.position += offset;
+            transform.position = new Vector3(transform.position.x, transform.position.y, baseZOffset);
+            transform.position += new Vector3(offset.x, offset.y);
         }
     }
     private void OnMouseDown()

@@ -8,6 +8,7 @@ public class ShelfLayout : MonoBehaviour
     private void Start()
     {
         InstantiateInventory(InventoryManager.Instance.storedFaces.ToArray());
+        if(InventoryManager.Instance.currentlyHeldFace != null) Destroy(InventoryManager.Instance.currentlyHeldFace.gameObject);
     }
     public void InstantiateInventory(storedFace[] faces)
     {
