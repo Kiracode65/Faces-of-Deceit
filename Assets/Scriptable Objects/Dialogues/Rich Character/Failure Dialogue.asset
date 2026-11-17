@@ -19,6 +19,3 @@ MonoBehaviour:
   - characterName: NPC
     text: "I refuse to pay you! I shall not be coming back! \n"
     playerChoices: []
-  - characterName: NPC
-    text: 
-    playerChoices: []

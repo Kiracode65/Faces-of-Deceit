@@ -6,26 +6,38 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private float minTimeBetweenCharacters = 5;
     [SerializeField] private float maxTimeBetweenCharacters = 10;
 
-    [SerializeField] private Character[] possibleRandomCharacters;
+    [SerializeField] private CharacterScriptable[] possibleRandomCharacters;
 
     [Header("Used for fixed experience, leave empty for pure random")]
     [SerializeField] private bool useFixedCharacters;
     [SerializeField] private bool revertToRandomAfterwards;
-    [SerializeField] private Character[] fixedSpawningCharacters;
+    [SerializeField] private CharacterScriptable[] fixedSpawningCharacters;
     [SerializeField] private int fixedSpawningIndex = 0;
 
     private Character currentChar;
+    private CharacterScriptable currentCharScriptable;
     private float timeTillNextSpawn = 0;
 
     private void Start()
     {
-        if(currentChar == null)
+        if(SaveData.instance != null && SaveData.instance.hasLoadedData)
         {
-            SpawnNextCharacter();
+            useFixedCharacters = SaveData.instance.currentData.usingFixedSpawning;
+            fixedSpawningIndex = SaveData.instance.currentData.currentFixedSpawningIndex;
+
+            currentCharScriptable = SaveData.instance.currentData.currentCharacter;
+            if(currentCharScriptable != null)
+            {
+                SpawnCharacter(currentCharScriptable, SaveData.instance.currentData.currentCharacterStage);
+            }
+            else
+            {
+                SpawnNextCharacter();
+            }
         }
         else
         {
-
+            SpawnNextCharacter();
         }
     }
 
@@ -81,7 +93,7 @@ public class CharacterSpawner : MonoBehaviour
         }
     }
 
-    public void SpawnCharacter(Character character)
+    public void SpawnCharacter(CharacterScriptable characterInfo, int jumpToStage = 0)
     {
         if(currentChar != null)
         {
@@ -89,13 +101,20 @@ public class CharacterSpawner : MonoBehaviour
             return;
         }
 
-        currentChar = Instantiate(character, parentToSpawnCharacterInto);
-        currentChar.Initialise();
+        if(SaveData.instance != null && SaveData.instance.hasLoadedData)
+        {
+            SaveData.instance.currentData.currentCharacter = characterInfo;
+        }
+
+        currentCharScriptable = characterInfo;
+        currentChar = Instantiate(characterInfo.characterPrefab, parentToSpawnCharacterInto);
+        currentChar.Initialise(jumpToStage);
         currentChar.onDestroy.AddListener(OnCharacterDestroyed);
     }
 
     private void OnCharacterDestroyed()
     {
         timeTillNextSpawn = Random.Range(minTimeBetweenCharacters, maxTimeBetweenCharacters);
+        currentCharScriptable = null;
     }
 }

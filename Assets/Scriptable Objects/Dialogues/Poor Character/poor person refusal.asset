@@ -10,27 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b34b7099d8c15b4aa532f7f1156c750, type: 3}
-  m_Name: NPC dialogue
+  m_Name: poor person refusal
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
   - characterName: NPC
-    text: Hey You!
+    text: Oh that is way too low, i'm sorry I can't agree to that
     playerChoices: []
   - characterName: NPC
-    text: I'm looking for a new face.
-    playerChoices: []
-  - characterName: NPC
-    text: Something young and pale.
-    playerChoices: []
-  - characterName: NPC
-    text: This one is too worn and old for me.
-    playerChoices: []
-  - characterName: NPC
-    text: Would you have anything in stock?
-    playerChoices: []
-  - characterName: NPC
-    text: Oh and make it quick, I'm in a hurry!
-    playerChoices: []
-  - characterName: NPC
-    text: 
+    text: I'll try somewhere else, goodbye
     playerChoices: []

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5732429536035838184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5657597771514482714}
+  - component: {fileID: 1149688991424173509}
+  m_Layer: 0
+  m_Name: Save Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5657597771514482714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732429536035838184}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.14325, y: -0.30622, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1149688991424173509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732429536035838184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152348b4db71e9045bdf412dfe8d8a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveData
+  EditorClearData: 0
+  EditorLoadData: 0
+  hasLoadedData: 0
+  currentData:
+    money: 0
+    storedFaces: []
+    alreadyMetCharacters: []
+    hasSeenFirstCutscene: 0
+    currentCharacter: {fileID: 0}
+    currentCharacterStage: 0
+    usingFixedSpawning: 1
+    currentFixedSpawningIndex: 0
+    currentDialogue: {fileID: 0}
+    currentDialogueIndex: 0
+  newSaveDefaultData:
+    money: 400
+    storedFaces:
+    - faceScriptable: {fileID: 11400000, guid: f496d9ddcb5622b42bb4cd8d7716d27b, type: 2}
+      assignedValue: 250
+    - faceScriptable: {fileID: 11400000, guid: b1d2ffc79bc0864449a77b5ef627533c, type: 2}
+      assignedValue: 350
+    - faceScriptable: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
+      assignedValue: 400
+    alreadyMetCharacters: []
+    hasSeenFirstCutscene: 0
+    currentCharacter: {fileID: 0}
+    currentCharacterStage: 0
+    usingFixedSpawning: 1
+    currentFixedSpawningIndex: 0
+    currentDialogue: {fileID: 0}
+    currentDialogueIndex: 0
+  persistentPath: 
+  filePath: 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,12 +14,50 @@ public class FacePurchasingCharacter : Character
     public UnityEvent onSuccess;
     public UnityEvent onFailure;
 
-    [SerializeField] private FaceObject receivedFace = null;
     [SerializeField] private bool satisfied = false;
-    [SerializeField] private bool hasFace = false;
+    [SerializeField] private bool canReceiveFace = false;
+
+
+
+    public override void StartStage(int stage)
+    {
+        base.StartStage(stage);
+
+        switch (stage)
+        {
+            case 0: // entry dialogue
+                DialogueSystem.instance.StartDialogue(entryDialogue);
+                canReceiveFace = false;
+                break;
+
+            case 1:
+                canReceiveFace = true;
+                break;
+
+            case 2: // has received face
+                canReceiveFace = false;
+
+                if (satisfied)
+                {
+                    DialogueSystem.instance.StartDialogue(successDialogue);
+                    onSuccess?.Invoke();
+                }
+                else
+                {
+                    DialogueSystem.instance.StartDialogue(failureDialogue);
+                    onFailure?.Invoke();
+                }
+                break;
+
+            default:
+                Destroy(gameObject);
+                break;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Face") && other.TryGetComponent(out FaceObject face))
+        if (canReceiveFace && other.gameObject.CompareTag("Face") && other.TryGetComponent(out FaceObject face))
         {
             ReceiveFace(face);
         }
@@ -26,41 +65,21 @@ public class FacePurchasingCharacter : Character
 
     private void ReceiveFace(FaceObject face) // triggers when we get a face
     {
-        receivedFace = face;
-        hasFace = true;
-
         if (HasCorrectFaceAttributes(face))
         {
             satisfied = true;
-            DialogueSystem.instance.StartDialogue(successDialogue);
-            onSuccess?.Invoke();
+            ScoreManager.instance.ChangeScore(face.FaceDetails.assignedValue);
             face.SellFace();
             Debug.Log("Satisfied Customer");
         }
         else
         {
             satisfied = false;
-            DialogueSystem.instance.StartDialogue(failureDialogue);
-            onFailure?.Invoke();
             face.StoreFace();
             Debug.Log("Unhappy Customer");
         }
-    }
 
-    public override void DialogueCompleted()
-    {
-        if (!hasFace) return;
-
-        if (satisfied)
-        {
-            ScoreManager.instance.ChangeScore(receivedFace.FaceDetails.assignedValue);
-        }
-        else
-        {
-            // not implemented
-        }
-
-        Destroy(gameObject);
+        AdvanceStage();
     }
 
     private bool HasCorrectFaceAttributes(FaceObject face)
