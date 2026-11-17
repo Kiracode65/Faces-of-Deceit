@@ -4563,8 +4563,8 @@ MonoBehaviour:
   useFixedCharacters: 1
   revertToRandomAfterwards: 0
   fixedSpawningCharacters:
-  - {fileID: 5387442963118865855, guid: 72d804810e0b7e947bf466d94fff4824, type: 3}
   - {fileID: 3826200904515603283, guid: c4fd814394d52284d91e3d56fb6765c0, type: 3}
+  - {fileID: 5387442963118865855, guid: 72d804810e0b7e947bf466d94fff4824, type: 3}
   fixedSpawningIndex: 0
 --- !u!1 &1657546038
 GameObject:
