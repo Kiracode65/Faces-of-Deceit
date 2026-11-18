@@ -134,10 +134,11 @@ public class DialogueSystem : MonoBehaviour
 
     private void CompleteDialogue()
     {
+        continueSkipButton.gameObject.SetActive(false);
         Debug.Log("Dialogue Complete");
         characterSpeechText.ClearText();
         onDialogueComplete?.Invoke();
-        continueSkipButton.gameObject.SetActive(false);
+    
     }
 
     private void CharacterTextCompleted()

@@ -82,7 +82,6 @@ public class CharacterSpawner : MonoBehaviour
             else
             {
                 SpawnCharacter(fixedSpawningCharacters[fixedSpawningIndex]);
-                fixedSpawningIndex++;
             }
 
 
@@ -114,6 +113,12 @@ public class CharacterSpawner : MonoBehaviour
 
     private void OnCharacterDestroyed()
     {
+        if (useFixedCharacters)
+        {
+            fixedSpawningIndex++;
+            if (SaveData.instance != null && SaveData.instance.hasLoadedData) SaveData.instance.currentData.currentFixedSpawningIndex = fixedSpawningIndex;
+        }
+
         timeTillNextSpawn = Random.Range(minTimeBetweenCharacters, maxTimeBetweenCharacters);
         currentCharScriptable = null;
     }
