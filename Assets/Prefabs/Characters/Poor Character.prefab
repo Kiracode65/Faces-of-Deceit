@@ -78,7 +78,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
+          m_ObjectArgument: {fileID: 5769403095139312756, guid: f2296216faa81e44baa4629a58c12973, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
+          m_ObjectArgument: {fileID: 5769403095139312756, guid: f2296216faa81e44baa4629a58c12973, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: -650450470818271526, guid: 5aa9d0d1430ed8d42bed86089128927e, type: 3}
+          m_ObjectArgument: {fileID: 5769403095139312756, guid: f2296216faa81e44baa4629a58c12973, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -167,7 +167,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7390259184285372813, guid: 248439e96b8a8ea428e4b2c76ab15ca5, type: 3}
+  m_Sprite: {fileID: 623039941884592425, guid: 3e0014cf68dcf9e4fb187b26655b03d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -242,7 +242,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.49, y: 2.95}
+    oldSize: {x: 1.8, y: 3}
     newSize: {x: 2.13, y: 2.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

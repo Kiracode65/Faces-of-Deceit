@@ -79,21 +79,21 @@ public class FaceSellingCharacter : Character
                 {
                     DialogueSystem.instance.StartDialogue(endingDialogue);
                     AddFaceToInventory();
-                    ScoreManager.instance.ChangeScore(setPrice);
+                    ScoreManager.instance.ChangeScore(- setPrice);
                     onCompletedProceedureLowPrice?.Invoke();
                 }
                 else if (setPrice > maxExpectedPrice)
                 {
                     DialogueSystem.instance.StartDialogue(endingDialogue);
                     AddFaceToInventory();
-                    ScoreManager.instance.ChangeScore(setPrice);
+                    ScoreManager.instance.ChangeScore(- setPrice);
                     onCompletedProceedureHighPrice?.Invoke();
                 }
                 else
                 {
                     DialogueSystem.instance.StartDialogue(endingDialogue);
                     AddFaceToInventory();
-                    ScoreManager.instance.ChangeScore(setPrice);
+                    ScoreManager.instance.ChangeScore(- setPrice);
                     onCompletedProceedureExpectedPrice?.Invoke();
                 }
                 break;

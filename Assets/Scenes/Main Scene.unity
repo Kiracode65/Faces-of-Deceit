@@ -435,8 +435,8 @@ RectTransform:
   m_LocalScale: {x: 0.009443904, y: 0.009443904, z: 0.009443904}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1737319105}
   - {fileID: 41403870}
+  - {fileID: 1737319105}
   - {fileID: 789109646}
   m_Father: {fileID: 2073315784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1651,8 +1651,8 @@ Transform:
   m_GameObject: {fileID: 555057044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0357, y: 0, z: 0}
-  m_LocalScale: {x: 8.63367, y: 5.696812, z: 8}
+  m_LocalPosition: {x: -0.0079, y: 0, z: 0}
+  m_LocalScale: {x: 9.1159115, y: 5.696812, z: 8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 541512429}
@@ -2297,8 +2297,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789109645}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0008078645}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2307,7 +2307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.85, y: 0.19455859}
   m_AnchorMax: {x: 0.85, y: 0.19455859}
-  m_AnchoredPosition: {x: 3, y: 4}
+  m_AnchoredPosition: {x: 3.00354, y: 4.000679}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789109647
@@ -2455,7 +2455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FacePriceSetter
   minPrice: 50
-  maxPrice: 100000
+  maxPrice: 10000
   detailsDisplay: {fileID: 857495431}
   popup: {fileID: 2009327918}
   onInvalidPrice:
@@ -4563,14 +4563,14 @@ MonoBehaviour:
   minTimeBetweenCharacters: 5
   maxTimeBetweenCharacters: 10
   possibleRandomCharacters:
-  - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
+  - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   useFixedCharacters: 1
   revertToRandomAfterwards: 1
   fixedSpawningCharacters:
   - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
-  fixedSpawningIndex: 0
+  fixedSpawningIndex: 2
 --- !u!1 &1657546038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,12 +6018,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: EditorLoadData
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: EditorClearData
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.money
-      value: 400
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: newSaveDefaultData.money
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: currentData.usingFixedSpawning
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.hasSeenFirstCutscene
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.currentCharacterStage
@@ -6031,16 +6047,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.storedFaces.Array.size
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: currentData.currentFixedSpawningIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.storedFaces.Array.data[0].assignedValue
-      value: 200
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: currentData.storedFaces.Array.data[1].assignedValue
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: currentData.storedFaces.Array.data[2].assignedValue
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.storedFaces.Array.data[0].faceScriptable
       value: 
+      objectReference: {fileID: 11400000, guid: f496d9ddcb5622b42bb4cd8d7716d27b, type: 2}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: currentData.storedFaces.Array.data[1].faceScriptable
+      value: 
       objectReference: {fileID: 11400000, guid: b1d2ffc79bc0864449a77b5ef627533c, type: 2}
+    - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
+      propertyPath: currentData.storedFaces.Array.data[2].faceScriptable
+      value: 
+      objectReference: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
     - target: {fileID: 5657597771514482714, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14325

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: poor person refusal
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
-  - characterName: NPC
-    text: Oh that is way too low, i'm sorry I can't agree to that
+  - characterName: Poor person
+    text: Oh no, that is far too low! I couldn't possibly accept that little!
     playerChoices: []
-  - characterName: NPC
+  - characterName: Poor person
     text: I'll try somewhere else, goodbye
     playerChoices: []

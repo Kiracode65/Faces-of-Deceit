@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Poor person price reached dialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
-  - characterName: NPC
+  - characterName: Poor person
     text: Thats fine by me. I didn't expect much more than that.....
     playerChoices: []
   - characterName: NPC
     text: Will we begin now?
     playerChoices: []
-  - characterName: NPC
+  - characterName: Poor person
     text: Please make it as quick as possible....
     playerChoices: []
-  - characterName: NPC
+  - characterName: Poor person
     text: 
     playerChoices: []

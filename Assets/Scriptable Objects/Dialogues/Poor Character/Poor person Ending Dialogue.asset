@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
   - characterName: Poor Person
-    text: Thank you, here is the money
+    text: Thank you...Best of luck....
     playerChoices: []
