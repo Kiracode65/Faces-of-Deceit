@@ -2882,8 +2882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   currentlyHeldFace: {fileID: 0}
   storedFaces:
-  - faceScriptable: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
-    assignedValue: 400
   - faceScriptable: {fileID: 11400000, guid: b1d2ffc79bc0864449a77b5ef627533c, type: 2}
     assignedValue: 700
   - faceScriptable: {fileID: 11400000, guid: f496d9ddcb5622b42bb4cd8d7716d27b, type: 2}
@@ -6027,7 +6025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.money
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: newSaveDefaultData.money

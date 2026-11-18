@@ -52,6 +52,9 @@ MonoBehaviour:
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
+  onCharacterCompleted:
+    m_PersistentCalls:
+      m_Calls: []
   faceToSell: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
   priceRefusalReaction: {fileID: 11400000, guid: 105185192ea99c94ca63eeaeb6d60a74, type: 2}
   lowPriceReaction: {fileID: 11400000, guid: e48d34420982733429a271b012027caf, type: 2}
@@ -116,7 +119,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   absoluteMinPrice: 100
-  minExpectedPrice: 0
+  minExpectedPrice: 150
   maxExpectedPrice: 400
 --- !u!212 &3746672382297064948
 SpriteRenderer:
