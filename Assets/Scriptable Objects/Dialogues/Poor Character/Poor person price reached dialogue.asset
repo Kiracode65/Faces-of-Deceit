@@ -22,6 +22,3 @@ MonoBehaviour:
   - characterName: Poor person
     text: Please make it as quick as possible....
     playerChoices: []
-  - characterName: Poor person
-    text: 
-    playerChoices: []
