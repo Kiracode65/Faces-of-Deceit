@@ -6027,7 +6027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: currentData.money
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1149688991424173509, guid: 87cccbcd34d67fd48b5b5c91b29ccd1e, type: 3}
       propertyPath: newSaveDefaultData.money
