@@ -108,10 +108,10 @@ public class CharacterSpawner : MonoBehaviour
         currentCharScriptable = characterInfo;
         currentChar = Instantiate(characterInfo.characterPrefab, parentToSpawnCharacterInto);
         currentChar.Initialise(jumpToStage);
-        currentChar.onDestroy.AddListener(OnCharacterDestroyed);
+        currentChar.onCharacterCompleted.AddListener(OnCharacterCompleted);
     }
 
-    private void OnCharacterDestroyed()
+    private void OnCharacterCompleted()
     {
         if (useFixedCharacters)
         {

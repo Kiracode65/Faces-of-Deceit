@@ -50,6 +50,7 @@ public class FacePurchasingCharacter : Character
                 break;
 
             default:
+                onCharacterCompleted.Invoke();
                 Destroy(gameObject);
                 break;
         }

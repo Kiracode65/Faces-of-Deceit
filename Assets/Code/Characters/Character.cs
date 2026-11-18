@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     public DialogueSegmentScriptable entryDialogue;
 
     public UnityEvent onDestroy;
+    public UnityEvent onCharacterCompleted;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Initialise(int jumpToStage = 0)
