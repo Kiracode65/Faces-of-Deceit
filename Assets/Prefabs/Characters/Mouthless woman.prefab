@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2993014504306228701}
   - component: {fileID: 78840091031813095}
   m_Layer: 0
-  m_Name: Poor Character 1
+  m_Name: Mouthless woman
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FaceSellingCharacter
   currentStage: 0
-  entryDialogue: {fileID: 11400000, guid: c16c3ba43a7e63c4fa9a966d8b9f8dd5, type: 2}
+  entryDialogue: {fileID: 11400000, guid: 42862badd92305c47934b424f1a18f6b, type: 2}
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
@@ -56,11 +56,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   faceToSell: {fileID: 0}
-  priceRefusalReaction: {fileID: 0}
-  lowPriceReaction: {fileID: 0}
-  expectedPriceReaction: {fileID: 0}
-  highPriceReaction: {fileID: 0}
-  endingDialogue: {fileID: 0}
+  priceRefusalReaction: {fileID: 11400000, guid: 6ff5021cbaddd6d41a856fc6e975d5f1, type: 2}
+  lowPriceReaction: {fileID: 11400000, guid: f8740c6c7b6fac345a4b3d9fe8b7b278, type: 2}
+  expectedPriceReaction: {fileID: 11400000, guid: 9c2d5dc1cd6aa134fab0c09127090bba, type: 2}
+  highPriceReaction: {fileID: 11400000, guid: b6e49e85ce73a574bbd4b9624a3c3841, type: 2}
+  endingDialogue: {fileID: 11400000, guid: 42862badd92305c47934b424f1a18f6b, type: 2}
   onPriceRefused:
     m_PersistentCalls:
       m_Calls: []
@@ -119,8 +119,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   absoluteMinPrice: 50
-  minExpectedPrice: 200
-  maxExpectedPrice: 350
+  minExpectedPrice: 70
+  maxExpectedPrice: 100
 --- !u!212 &3746672382297064948
 SpriteRenderer:
   serializedVersion: 2

@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.45
+  m_fontSize: 18.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2421,7 +2421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &857495429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2454,8 +2454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b77fdadd0195544f95a1a400b610e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FacePriceSetter
-  minPrice: 50
-  maxPrice: 10000
+  minPrice: 100
+  maxPrice: 1000
   detailsDisplay: {fileID: 857495431}
   popup: {fileID: 2009327918}
   onInvalidPrice:
@@ -4563,6 +4563,7 @@ MonoBehaviour:
   possibleRandomCharacters:
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
   - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
+  - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   useFixedCharacters: 1
   revertToRandomAfterwards: 1
   fixedSpawningCharacters:
@@ -5743,7 +5744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2009327919
 RectTransform:
   m_ObjectHideFlags: 0
