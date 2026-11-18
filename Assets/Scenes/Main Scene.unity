@@ -4563,7 +4563,6 @@ MonoBehaviour:
   possibleRandomCharacters:
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
   - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
-  - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   useFixedCharacters: 1
   revertToRandomAfterwards: 1
   fixedSpawningCharacters:
