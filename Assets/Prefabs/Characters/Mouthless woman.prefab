@@ -118,8 +118,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  absoluteMinPrice: 100
-  minExpectedPrice: 110
+  absoluteMinPrice: 70
+  minExpectedPrice: 90
   maxExpectedPrice: 120
 --- !u!212 &3746672382297064948
 SpriteRenderer:

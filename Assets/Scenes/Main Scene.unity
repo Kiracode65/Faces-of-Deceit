@@ -2454,7 +2454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b77fdadd0195544f95a1a400b610e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FacePriceSetter
-  minPrice: 100
+  minPrice: 20
   maxPrice: 1000
   detailsDisplay: {fileID: 857495431}
   popup: {fileID: 2009327918}
