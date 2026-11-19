@@ -48,19 +48,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FaceSellingCharacter
   currentStage: 0
-  entryDialogue: {fileID: 11400000, guid: c16c3ba43a7e63c4fa9a966d8b9f8dd5, type: 2}
+  entryDialogue: {fileID: 11400000, guid: 13a6086eeaf92e84bbe60583bb63cc0f, type: 2}
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
   onCharacterCompleted:
     m_PersistentCalls:
       m_Calls: []
-  faceToSell: {fileID: 11400000, guid: 54c1119f0bec9a14b8a076214d7b48de, type: 2}
-  priceRefusalReaction: {fileID: 11400000, guid: 105185192ea99c94ca63eeaeb6d60a74, type: 2}
-  lowPriceReaction: {fileID: 11400000, guid: e48d34420982733429a271b012027caf, type: 2}
-  expectedPriceReaction: {fileID: 11400000, guid: 14614513eb610b44fb34e6d885d7fe7d, type: 2}
-  highPriceReaction: {fileID: 11400000, guid: a31a898ad678b2c4b8b148c7e907ba78, type: 2}
-  endingDialogue: {fileID: 11400000, guid: 94100c47f54cb3f4aa178fbd4b648c7e, type: 2}
+  faceToSell: {fileID: 11400000, guid: 21177a5e14d53a64592eb7cde6011bb4, type: 2}
+  priceRefusalReaction: {fileID: 11400000, guid: aabb28312d35cec4bac6657cbfa39744, type: 2}
+  lowPriceReaction: {fileID: 11400000, guid: ea07c16468a694c41a157677b1b79543, type: 2}
+  expectedPriceReaction: {fileID: 11400000, guid: 2c016c55d420b224ca28ff56875b0bd3, type: 2}
+  highPriceReaction: {fileID: 11400000, guid: d75533c90119db94dab2254eb3c58a18, type: 2}
+  endingDialogue: {fileID: 11400000, guid: c108badbf7da35d468633b5c6c01fa5f, type: 2}
   onPriceRefused:
     m_PersistentCalls:
       m_Calls: []
@@ -119,8 +119,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   absoluteMinPrice: 100
-  minExpectedPrice: 150
-  maxExpectedPrice: 400
+  minExpectedPrice: 110
+  maxExpectedPrice: 120
 --- !u!212 &3746672382297064948
 SpriteRenderer:
   serializedVersion: 2

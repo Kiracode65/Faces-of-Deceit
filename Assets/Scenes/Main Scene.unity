@@ -4563,11 +4563,15 @@ MonoBehaviour:
   possibleRandomCharacters:
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
   - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
+  - {fileID: 11400000, guid: 1fe77514dded2af4993338c6ccdab2b1, type: 2}
+  - {fileID: 11400000, guid: 9d52f480fb1f79d4d941b0ec5613de1e, type: 2}
   useFixedCharacters: 1
   revertToRandomAfterwards: 1
   fixedSpawningCharacters:
   - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
+  - {fileID: 11400000, guid: 1fe77514dded2af4993338c6ccdab2b1, type: 2}
+  - {fileID: 11400000, guid: 9d52f480fb1f79d4d941b0ec5613de1e, type: 2}
   fixedSpawningIndex: 2
 --- !u!1 &1657546038
 GameObject:
