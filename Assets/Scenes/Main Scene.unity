@@ -3991,7 +3991,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.16
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4558,13 +4558,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
   parentToSpawnCharacterInto: {fileID: 1630161735}
-  minTimeBetweenCharacters: 5
-  maxTimeBetweenCharacters: 10
+  minTimeBetweenCharacters: 3.5
+  maxTimeBetweenCharacters: 5
   possibleRandomCharacters:
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
   - {fileID: 11400000, guid: e9f900b47d9af584c9883a21659788e5, type: 2}
   - {fileID: 11400000, guid: 1fe77514dded2af4993338c6ccdab2b1, type: 2}
   - {fileID: 11400000, guid: 9d52f480fb1f79d4d941b0ec5613de1e, type: 2}
+  - {fileID: 11400000, guid: f31d5c2645b812242829621d91323586, type: 2}
+  - {fileID: 11400000, guid: 824974798c31c27428e1b46776ead42c, type: 2}
   useFixedCharacters: 1
   revertToRandomAfterwards: 1
   fixedSpawningCharacters:
@@ -4572,7 +4574,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d52a58617503b1744be9a3029a86676d, type: 2}
   - {fileID: 11400000, guid: 1fe77514dded2af4993338c6ccdab2b1, type: 2}
   - {fileID: 11400000, guid: 9d52f480fb1f79d4d941b0ec5613de1e, type: 2}
-  fixedSpawningIndex: 2
+  - {fileID: 11400000, guid: f31d5c2645b812242829621d91323586, type: 2}
+  - {fileID: 11400000, guid: 824974798c31c27428e1b46776ead42c, type: 2}
+  fixedSpawningIndex: 6
 --- !u!1 &1657546038
 GameObject:
   m_ObjectHideFlags: 0

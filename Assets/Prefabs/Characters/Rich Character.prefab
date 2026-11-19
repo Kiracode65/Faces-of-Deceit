@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6749209398622623152}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -0.19, z: 0}
+  m_LocalPosition: {x: 0.05, y: -0.27, z: 0}
   m_LocalScale: {x: 2.6166983, y: 2.2902923, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47,14 +47,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82aa66ac5d7deb8459bd51ebf9f8a5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FacePurchasingCharacter
+  currentStage: 0
   entryDialogue: {fileID: 11400000, guid: a039e5124a9971f4183224870cab2dd2, type: 2}
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onCharacterCompleted:
+    m_PersistentCalls:
+      m_Calls: []
   desiredAttributes: 0200000004000000
   unWantedAttributes: 
   successDialogue: {fileID: 11400000, guid: 731399bafbb11e048a8623ba0d7a164f, type: 2}
   failureDialogue: {fileID: 11400000, guid: 15cf2d73d9e38524095e80ac2b97b2bb, type: 2}
-  receivedFace: {fileID: 0}
+  onSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  onFailure:
+    m_PersistentCalls:
+      m_Calls: []
   satisfied: 0
-  hasFace: 0
+  canReceiveFace: 0
 --- !u!212 &3746672382297064948
 SpriteRenderer:
   serializedVersion: 2

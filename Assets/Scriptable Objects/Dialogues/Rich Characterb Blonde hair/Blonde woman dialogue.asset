@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSegmentScriptable
   dialoguePieces:
   - characterName: NPC
-    text: Why hello thjere cutie!
+    text: Why hello there cutie!
     playerChoices: []
   - characterName: NPC
     text: Listen, could you do me a favour?
