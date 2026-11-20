@@ -2888,6 +2888,8 @@ MonoBehaviour:
     assignedValue: 250
   - faceScriptable: {fileID: 11400000, guid: 5748c08666dd328468383ecddf601fe8, type: 2}
     assignedValue: 100
+  - faceScriptable: {fileID: 11400000, guid: 7661fabea5232834197518956931edfa, type: 2}
+    assignedValue: 150
 --- !u!1 &899304337
 GameObject:
   m_ObjectHideFlags: 0
