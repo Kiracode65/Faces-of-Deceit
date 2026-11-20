@@ -30,5 +30,5 @@ MonoBehaviour:
     text: Could you do that for me? I'll pay you well...
     playerChoices: []
   - characterName: NPC
-    text: It would make my DAY if you could!
+    text: You would be doing me a HUGE favour if you could!
     playerChoices: []

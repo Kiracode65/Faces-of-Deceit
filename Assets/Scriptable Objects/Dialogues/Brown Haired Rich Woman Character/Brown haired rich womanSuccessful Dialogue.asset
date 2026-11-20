@@ -20,5 +20,5 @@ MonoBehaviour:
     text: These will do me perfectly!
     playerChoices: []
   - characterName: NPC
-    text: 'here you go, as promised! I can assure you I will be coming back again! '
+    text: 'Here you go, as promised! I can assure you I will be coming back again! '
     playerChoices: []

@@ -17,7 +17,7 @@ MonoBehaviour:
     text: AH just what I wanted!!!
     playerChoices: []
   - characterName: NPC
-    text: You are an absolute STAR! here's the money I owe you!
+    text: You are an absolute STAR! Here's the money I owe you!
     playerChoices: []
   - characterName: NPC
     text: I will SO be coming back! I'm telling everyone about this place!!! Bye

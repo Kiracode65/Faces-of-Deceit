@@ -20,7 +20,7 @@ MonoBehaviour:
     text: Listen, could you do me a favour?
     playerChoices: []
   - characterName: NPC
-    text: I really need some new lips, that re normal and pale! Nothing damaged.
+    text: I really need some new lips, that are normal and pale! Nothing damaged.
     playerChoices: []
   - characterName: NPC
     text: My ones are so dry and never moisten up! I got them from some old hag on
